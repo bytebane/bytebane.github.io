@@ -12,11 +12,17 @@
 </head>
 <body>
 
+<input type="checkbox" class="checkbox" id="checkbox">
+<label for="checkbox" class="checkbox-label">
+	<i class="fas fa-sun"></i>
+	<i class="fas fa-moon"></i>
+	<span class="ball"></span>
+</label>
+
 <h1>
 	👋 Hello There
 	<img src="https://emojis.slackmojis.com/emojis/images/1531849430/4246/blob-sunglasses.gif?1531849430" width="30" alt="Hi"/>
 </h1>
-
 
 
 <p><img id="bannerImg" src="./assets/git-banner.gif" alt="Banner"/></p>
@@ -59,34 +65,34 @@
 <!--Code Start-->
 <div id="sourceCode" class="lightSourceCode">
   <pre>
-<code><span class="kn">import</span> <span class="nn">dev.android.*</span><span class="o">;</span>
-<span class="kn">import</span> <span class="nn">dev.web.*</span><span class="o">;</span>
-<span class="kn">import</span> <span class="nn">dev.iot.*</span><span class="o">;</span>
+<code><span class="kn">import</span> <span class="nn">dev.android.*</span><span class="codeSym">;</span>
+<span class="kn">import</span> <span class="nn">dev.web.*</span><span class="codeSym">;</span>
+<span class="kn">import</span> <span class="nn">dev.iot.*</span><span class="codeSym">;</span>
 
-<span class="kd">const</span> <span class="n">bytebane</span> <span class="o">=</span> <span class="o">{</span>
-    <span class="nl">pronouns:</span> <span class="s">"He"</span> <span class="o">|</span> <span class="s">"Him"</span><span class="o">,</span>
-    <span class="nl">code:</span> <span class="o">[</span><span class="s">"Dart"</span><span class="o">,</span> <span class="s">"Java"</span><span class="o">,</span> <span class="s">"Python"</span><span class="o">,</span> <span class="s">"C++"</span><span class="o">],</span>
-    <span class="nl">askMeAbout:</span> <span class="o">[</span><span class="s">"Tech"</span><span class="o">,</span> <span class="s">"Android App Dev"</span><span class="o">,</span> <span class="s">"Cross-Platform App Dev"</span><span class="o">,</span> <span class="s">"Internet of Things"</span><span class="o">],</span>
-    <span class="nl">technologies:</span> <span class="o">{</span>
-        <span class="nl">mobileApp:</span> <span class="o">{</span>
-            <span class="nl">android:</span> <span class="o">[</span><span class="s">"Flutter"</span><span class="o">,</span> <span class="s">"Java"</span><span class="o">]</span>
-        <span class="o">},</span>
-        <span class="nl">backEnd:</span> <span class="o">{</span>
-            <span class="nl">databases:</span> <span class="o">[</span><span class="s">"Cloud Firestore"</span><span class="o">,</span> <span class="s">"FirebaseRTDB"</span><span class="o">,</span> <span class="s">"MongoDB"</span><span class="o">],</span>
-            <span class="nl">tech:</span> <span class="o">[</span><span class="s">"Node"</span><span class="o">,</span> <span class="s">"Express"</span><span class="o">]</span>
-        <span class="o">},</span>
-        <span class="nl">devOps:</span> <span class="o">[</span><span class="s">"Docker"</span><span class="o">,</span> <span class="s">"Nginx"</span><span class="o">],</span>
-        <span class="nl">IoT S/Ws:</span> <span class="o">[</span><span class="s">"C++"</span><span class="o">,</span> <span class="s">"Python"</span><span class="o">],</span>
-        <span class="nl">IoT H/Ws:</span> <span class="o">[</span><span class="s">"ESP8266"</span><span class="o">,</span> <span class="s">"ESP32"</span><span class="o">,</span> <span class="s">"Arduino Uno"</span><span class="o">,</span> <span class="s">"RaspberryPi"</span><span class="o">],</span>
-        <span class="nl">OS:</span> <span class="o">[</span><span class="s">"Windows"</span><span class="o">,</span><span class="s">"Linux"</span><span class="o">],</span>
-        <span class="nl">IDEs:</span> <span class="o">[</span><span class="s">"VS Code"</span><span class="o">,</span> <span class="s">"Android Studio"</span><span class="o">,</span> <span class="s">"Arduino IDE"</span><span class="o">],</span>
-        <span class="nl">misc:</span> <span class="o">[</span><span class="s">"Firebase"</span><span class="o">,</span> <span class="s">"GCP"</span><span class="o">,</span> <span class="s">"GitHub"</span><span class="o">,</span> <span class="s">"Digital Ocean"</span><span class="o">,</span> <span class="s">"Heroku"</span><span class="o">]</span>
-    <span class="o">},</span>
-    <span class="nl">architecture:</span> <span class="o">[</span><span class="s">"Model-View-Controller"</span><span class="o">,</span> <span class="s">"Client-Server Pattern"</span><span class="o">,</span> <span class="s">"Layered Pattern"</span><span class="o">],</span>
-    <span class="nl">currentFocus:</span> <span class="o">[</span><span class="s">"Learn &amp; Practise to write better Optimised Code by revisiting DSA"</span><span class="o">,</span>
-                    <span class="s">"Reviving the dead Projects from my Hard Drive and push them here"</span><span class="o">],</span>
-    <span class="nl">funFact:</span> <span class="s">"Why do programmers prefer dark mode? Because light attracts bugs."</span>
-<span class="o">};</span>
+<span class="kd">const</span> <span class="n">bytebane</span> <span class="codeSym">=</span> <span class="codeSym">{</span>
+    <span class="codeObjKey">pronouns:</span> <span class="codeObjVal">"He"</span> <span class="codeSym">|</span> <span class="codeObjVal">"Him"</span><span class="codeSym">,</span>
+    <span class="codeObjKey">code:</span> <span class="codeSym">[</span><span class="codeObjVal">"Dart"</span><span class="codeSym">,</span> <span class="codeObjVal">"Java"</span><span class="codeSym">,</span> <span class="codeObjVal">"Python"</span><span class="codeSym">,</span> <span class="codeObjVal">"C++"</span><span class="codeSym">],</span>
+    <span class="codeObjKey">askMeAbout:</span> <span class="codeSym">[</span><span class="codeObjVal">"Tech"</span><span class="codeSym">,</span> <span class="codeObjVal">"Android App Dev"</span><span class="codeSym">,</span> <span class="codeObjVal">"Cross-Platform App Dev"</span><span class="codeSym">,</span> <span class="codeObjVal">"Internet of Things"</span><span class="codeSym">],</span>
+    <span class="codeObjKey">technologies:</span> <span class="codeSym">{</span>
+        <span class="codeObjKey">mobileApp:</span> <span class="codeSym">{</span>
+            <span class="codeObjKey">android:</span> <span class="codeSym">[</span><span class="codeObjVal">"Flutter"</span><span class="codeSym">,</span> <span class="codeObjVal">"Java"</span><span class="codeSym">]</span>
+        <span class="codeSym">},</span>
+        <span class="codeObjKey">backEnd:</span> <span class="codeSym">{</span>
+            <span class="codeObjKey">databases:</span> <span class="codeSym">[</span><span class="codeObjVal">"Cloud Firestore"</span><span class="codeSym">,</span> <span class="codeObjVal">"FirebaseRTDB"</span><span class="codeSym">,</span> <span class="codeObjVal">"MongoDB"</span><span class="codeSym">],</span>
+            <span class="codeObjKey">tech:</span> <span class="codeSym">[</span><span class="codeObjVal">"Node"</span><span class="codeSym">,</span> <span class="codeObjVal">"Express"</span><span class="codeSym">]</span>
+        <span class="codeSym">},</span>
+        <span class="codeObjKey">devOps:</span> <span class="codeSym">[</span><span class="codeObjVal">"Docker"</span><span class="codeSym">,</span> <span class="codeObjVal">"Nginx"</span><span class="codeSym">],</span>
+        <span class="codeObjKey">IoT S/Ws:</span> <span class="codeSym">[</span><span class="codeObjVal">"C++"</span><span class="codeSym">,</span> <span class="codeObjVal">"Python"</span><span class="codeSym">],</span>
+        <span class="codeObjKey">IoT H/Ws:</span> <span class="codeSym">[</span><span class="codeObjVal">"ESP8266"</span><span class="codeSym">,</span> <span class="codeObjVal">"ESP32"</span><span class="codeSym">,</span> <span class="codeObjVal">"Arduino Uno"</span><span class="codeSym">,</span> <span class="codeObjVal">"RaspberryPi"</span><span class="codeSym">],</span>
+        <span class="codeObjKey">OS:</span> <span class="codeSym">[</span><span class="codeObjVal">"Windows"</span><span class="codeSym">,</span><span class="codeObjVal">"Linux"</span><span class="codeSym">],</span>
+        <span class="codeObjKey">IDEs:</span> <span class="codeSym">[</span><span class="codeObjVal">"VS Code"</span><span class="codeSym">,</span> <span class="codeObjVal">"Android Studio"</span><span class="codeSym">,</span> <span class="codeObjVal">"Arduino IDE"</span><span class="codeSym">],</span>
+        <span class="codeObjKey">misc:</span> <span class="codeSym">[</span><span class="codeObjVal">"Firebase"</span><span class="codeSym">,</span> <span class="codeObjVal">"GCP"</span><span class="codeSym">,</span> <span class="codeObjVal">"GitHub"</span><span class="codeSym">,</span> <span class="codeObjVal">"Digital Ocean"</span><span class="codeSym">,</span> <span class="codeObjVal">"Heroku"</span><span class="codeSym">]</span>
+    <span class="codeSym">},</span>
+    <span class="codeObjKey">architecture:</span> <span class="codeSym">[</span><span class="codeObjVal">"Model-View-Controller"</span><span class="codeSym">,</span> <span class="codeObjVal">"Client-Server Pattern"</span><span class="codeSym">,</span> <span class="codeObjVal">"Layered Pattern"</span><span class="codeSym">],</span>
+    <span class="codeObjKey">currentFocus:</span> <span class="codeSym">[</span><span class="codeObjVal">"Learn &amp; Practise to write better Optimised Code by revisiting DSA"</span><span class="codeSym">,</span>
+                    <span class="codeObjVal">"Reviving the dead Projects from my Hard Drive and push them here"</span><span class="codeSym">],</span>
+    <span class="codeObjKey">funFact:</span> <span class="codeObjVal">"Why do programmers prefer dark mode? Because light attracts bugs."</span>
+<span class="codeSym">};</span>
 </code>
   </pre>
 </div>
@@ -148,17 +154,12 @@
 	<img style="width: 100%; min-width: 50px" src="https://streak-stats.demolab.com/?user=ByteBane&theme=radical" alt="GitStats3"/>
 </details>
 
-<p>
+<p align = 'right'>
 	<img src="https://komarev.com/ghpvc/?username=bytebane&amp;style=plastic&amp;color=blueviolet" alt="ProfileView Counter"
 	/>
 	<img src="https://slackmojis.com/emojis/25046-wave-bye/download" width="50" alt="Bye"/>
 </p>
-<input type="checkbox" class="checkbox" id="checkbox">
-<label for="checkbox" class="checkbox-label">
-	<i class="fas fa-moon"></i>
-	<i class="fas fa-sun"></i>
-	<span class="ball"></span>
-</label>
+
 <script src="index.js"></script>
 </body>
 </html>

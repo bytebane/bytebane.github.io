@@ -9,16 +9,15 @@ html{
 	box-sizing: border-box;
 	font-size: 18px;
 	font-family: 'Poppins', sans-serif;
-
 }
 
 body{
-	background-color: white;
 	color: black;
+	background-color: white;
 	width: 80%;
 	margin: auto;
+	position: relative;
 }
-
 
 h1{
 	text-align: center;
@@ -35,62 +34,62 @@ h1{
 	border: none;
 	outline: none;
 	overflow-y: scroll;
-}
-
-.nl{
-	color: #990000;
-	font-weight: bold;
-}
-.s{
-	color: #d14;
-
+	padding-left: 15px;
 }
 
 .lightSourceCode {
 	background-color: #f6f8fa;
 }
+
+.codeObjKey{
+	color: #990000;
+	font-weight: bold;
+}
+.codeObjVal{
+	color: #d14;
+}
 details *{
 	display: inline;
 }
 
-#themeBtn{
-	position: static;
-	float: right;
-}
 
 
-
-.checkbox {
-	opacity: 0;
-	/*position: absolute;*/
-	float: right;
-
-}
-
+/*Dark/ Light Toggle Button Start*/
 .checkbox-label {
+	/*visibility: hidden;*/
 	background-color: #111;
 	width: 50px;
-	/*height: 26px;*/
+	height: 26px;
 	border-radius: 50px;
-	position: relative;
-	padding: 5px;
+	position: fixed;
+	top: 0;
+	right: 0;
+	margin-right: 10px;
+	margin-top: 10px;
+	padding: 2px 5px;
 	cursor: pointer;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 }
 
-.fa-moon {color: #f1c40f;}
+.fa-moon {
+	color: #f1c40f;
+	font-size: 20px;
+	padding-right: 5px;
+}
 
-.fa-sun {color: #f39c12;}
+.fa-sun {
+	color: #f39c12;
+	font-size: 20px;
+}
 
 .checkbox-label .ball {
 	background-color: #fff;
-	width: 28px;
-	height: 22px;
+	width: 23px;
+	height: 23px;
 	position: absolute;
-	left: 2px;
-	top: 2px;
+	/*top: 2px;*/
 	border-radius: 50%;
 	transition: transform 0.2s linear;
 }
@@ -99,10 +98,13 @@ details *{
 	transform: translateX(24px);
 }
 
+input[type="checkbox"] {
+	display: none;
+}
+
+/*Dark/ Light Toggle Button End*/
 
 /*Dark Mode Specific Styles*/
-
-
 
 .darkModeBody {
 	background-color: #0D1117;
@@ -112,4 +114,12 @@ details *{
 .darkModeSourceCode{
 	background-color: #161B22;
 	color: white;
+}
+
+.darkModeCodeObjKey{
+	color: #79c0ff;
+	font-weight: bold;
+}
+.darkModeCodeObjVal{
+	color: #a5d6ff;
 }
