@@ -1,9 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&family=Source+Code+Pro&display=swap');
+
 *{
-	margin: 0;
-	padding: 0;
+	/*margin: 0;*/
+	/*padding: 0;*/
 }
 
 html{
-	box-sizing: border-box
-;
+	box-sizing: border-box;
+	font-size: 18px;
+	font-family: 'Poppins', sans-serif;
+
+}
+
+body{
+	background-color: white;
+	color: black;
+	width: 80%;
+	margin: auto;
+}
+
+
+h1{
+	text-align: center;
+}
+
+#bannerImg{
+	width: 100%;
+	height: 250px;
+	object-fit: fill;
+}
+
+#sourceCode{
+	font-family: 'Source Code Pro', monospace;
+	border: none;
+	outline: none;
+	overflow-y: scroll;
+}
+
+.nl{
+	color: #990000;
+	font-weight: bold;
+}
+.s{
+	color: #d14;
+
+}
+
+.lightSourceCode {
+	background-color: #f6f8fa;
+}
+details *{
+	display: inline;
+}
+
+#themeBtn{
+	position: static;
+	float: right;
+}
+
+
+
+.checkbox {
+	opacity: 0;
+	/*position: absolute;*/
+	float: right;
+
+}
+
+.checkbox-label {
+	background-color: #111;
+	width: 50px;
+	/*height: 26px;*/
+	border-radius: 50px;
+	position: relative;
+	padding: 5px;
+	cursor: pointer;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.fa-moon {color: #f1c40f;}
+
+.fa-sun {color: #f39c12;}
+
+.checkbox-label .ball {
+	background-color: #fff;
+	width: 28px;
+	height: 22px;
+	position: absolute;
+	left: 2px;
+	top: 2px;
+	border-radius: 50%;
+	transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .checkbox-label .ball {
+	transform: translateX(24px);
+}
+
+
+/*Dark Mode Specific Styles*/
+
+
+
+.darkModeBody {
+	background-color: #0D1117;
+	color: white;
+}
+
+.darkModeSourceCode{
+	background-color: #161B22;
+	color: white;
 }
